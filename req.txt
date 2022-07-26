@@ -1,0 +1,9 @@
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo ldconfig
+sudo apt install libgtk2.0-0:i386
+sudo apt install libcurl4:i386
+sudo apt install libnss3:i386
+LD_LIBRARY_PATH=/usr/lib/
+sudo ln -s /usr/share/applications/guake.desktop /etc/xdg/autostart/
+sudo apt-get install libgl1-mesa-glx:i386
